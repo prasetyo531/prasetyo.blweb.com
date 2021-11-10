@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class HomepageScreen extends ActionBase{
+public class HomepageScreen extends ActionBase {
 
     //descendants
     @FindBy(xpath ="//*[@id='vm__white-header-dweb']//descendant::a[122]")

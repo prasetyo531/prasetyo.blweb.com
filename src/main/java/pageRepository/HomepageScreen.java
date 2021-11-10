@@ -1,5 +1,6 @@
 package pageRepository;
 
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -32,6 +33,15 @@ public class HomepageScreen extends ActionBase {
     public HomepageScreen goTo(){
         this.driver.get("https://bukalapak.com");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        //continue interacting with the application.
+        return new HomepageScreen(driver);
+    }
+
+    public HomepageScreen goToAddCookie(){
+        this.driver.get("https://bukalapak.com");
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        Cookie loginCookie = new Cookie("user_credentials", "0d9e1015cd658b778b02b8d0ba53cd590b1d0d11194c235f2f134e76df219f9671dcabf9463ec9e5ff2017403fd2361c6e66fbc9fda8ca4ba69e7042e2bed065%3A%3A47339297%3A%3A2022-02-10T22%3A07%3A43%2B07%3A00");
+        driver.manage().addCookie(loginCookie);
         //continue interacting with the application.
         return new HomepageScreen(driver);
     }

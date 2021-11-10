@@ -45,7 +45,7 @@ public class ActionBase {
 
     public void sendKeysToWebElement(WebElement element, String textToSend) throws Exception {
         try {
-            this.WaitUntilWebElementIsVisible(element);
+            this.waitUntilWebElementIsVisible(element);
             element.clear();
             element.sendKeys(textToSend);
             System.out.println("Successfully Sent the following keys: '" + textToSend + "' to element: " + "<"+ element.toString() + ">");

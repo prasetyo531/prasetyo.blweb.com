@@ -3,10 +3,10 @@
 <suite name="Suite" parallel="tests" verbose="2" thread-count="1">
     <test name="first">
         <parameter name="browser" value="chrome"></parameter>
-        <parameter name="phonemail" value=""></parameter>
-        <parameter name="otp" value="112233"></parameter>
+        <parameter name="phonemail" value="myjne001@gmail.com"></parameter>
+        <parameter name="otp" value="1234"></parameter>
         <classes>
-            <class name="scenario.PaymentCreditSuccess"/>
+            <class name="scenario.RegisterInvalidOtp"/>
         </classes>
     </test>
 </suite>

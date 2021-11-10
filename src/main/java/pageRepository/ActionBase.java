@@ -13,7 +13,7 @@ public class ActionBase {
     protected WebDriverWait wait;
     protected JavascriptExecutor jsExecutor;
 
-    public boolean WaitUntilWebElementIsVisible(WebElement element) {
+    public boolean waitUntilWebElementIsVisible(WebElement element) {
         try {
             this.wait.until(webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete"));
             this.wait.until(ExpectedConditions.visibilityOf(element));

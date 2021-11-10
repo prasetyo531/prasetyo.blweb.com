@@ -41,7 +41,7 @@ public class RegisterScreen extends ActionBase {
 
     public RegisterScreen inputDatatoRegis(String phonemail) {
         try {
-            WaitUntilWebElementIsVisible(handphoneEmailField);
+            waitUntilWebElementIsVisible(handphoneEmailField);
             sendKeysToWebElement(handphoneEmailField, phonemail);
         } catch (Exception e) {
             e.getMessage();
@@ -52,7 +52,6 @@ public class RegisterScreen extends ActionBase {
     public RegisterScreen clickDaftar() {
         try {
             waitAndClickElement(daftarButton);
-            waitForContainsUrl("https://accounts.bukalapak.com/login?");
         } catch (Exception e) {
             e.getMessage();
         }
@@ -61,7 +60,7 @@ public class RegisterScreen extends ActionBase {
 
     public RegisterScreen isConfirmationModalAppear() {
         try {
-            WaitUntilWebElementIsVisible(registerConfirmationModal);
+            waitUntilWebElementIsVisible(registerConfirmationModal);
         } catch (Exception e) {
             e.getMessage();
         }
@@ -79,7 +78,7 @@ public class RegisterScreen extends ActionBase {
 
     public RegisterScreen inputOtp(String otp) {
         try {
-            WaitUntilWebElementIsVisible(otpField);
+            waitUntilWebElementIsVisible(otpField);
             sendKeysToWebElement(otpField, otp);
         } catch (Exception e) {
             e.getMessage();
@@ -98,9 +97,9 @@ public class RegisterScreen extends ActionBase {
 
     public RegisterScreen assertErrorOtp() {
         try {
-            WaitUntilWebElementIsVisible(otpMsgLbl);
-            String = otpMsgLbl.getText();
-            Assert.assertEquals("Kode rahasia tidak sesuai", String);
+            waitUntilWebElementIsVisible(otpMsgLbl);
+            String txt = otpMsgLbl.getText();
+            Assert.assertEquals("Kode rahasia tidak sesuai", txt);
         } catch (Exception e) {
             e.getMessage();
         }

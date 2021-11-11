@@ -1,20 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="tests" verbose="2" thread-count="1">
-    <test name="first">
+<!--    <test name="registerInvalidOtp">-->
+<!--        <parameter name="browser" value="chrome"></parameter>-->
+<!--        <parameter name="phonemail" value="myjne001@gmail.com"></parameter>-->
+<!--        <parameter name="otp" value="1234"></parameter>-->
+<!--        <classes>-->
+<!--            <class name="scenario.RegisterInvalidOtp"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="loginInvalidOtp">-->
+<!--        <parameter name="browser" value="chrome"></parameter>-->
+<!--        <parameter name="phonemail" value="081284915951"></parameter>-->
+<!--        <parameter name="otp" value="1234"></parameter>-->
+<!--        <classes>-->
+<!--            <class name="scenario.LoginInvalidOtp"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <test name="addToCart">
         <parameter name="browser" value="chrome"></parameter>
-        <parameter name="phonemail" value="myjne001@gmail.com"></parameter>
-        <parameter name="otp" value="1234"></parameter>
+        <parameter name="search" value="kopi"></parameter>
         <classes>
-            <class name="scenario.RegisterInvalidOtp"/>
+            <class name="scenario.AddToCart"/>
         </classes>
     </test>
-    <test name="second">
+    <test name="searchProduct">
         <parameter name="browser" value="chrome"></parameter>
-        <parameter name="phonemail" value="081284915951"></parameter>
-        <parameter name="otp" value="1234"></parameter>
+        <parameter name="search" value="kopi"></parameter>
         <classes>
-            <class name="scenario.LoginInvalidOtp"/>
+            <class name="scenario.SearchProduct"/>
         </classes>
     </test>
 </suite>

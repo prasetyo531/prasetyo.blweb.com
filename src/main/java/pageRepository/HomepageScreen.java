@@ -21,7 +21,13 @@ public class HomepageScreen extends ActionBase {
     @FindBy(id ="v-omnisearch__input")
     public WebElement searchBar;
 
-    @FindBy(xpath ="((//img[@class='bl-thumbnail--img'])[1]")
+    @FindBy(xpath ="//button[@title='Cari']")
+    public WebElement submitSearchBar;
+
+    @FindBy(xpath ="//div[@class='v-omnisearch__results_container']")
+    public WebElement searchSuggestion;
+
+    @FindBy(xpath ="(//div[@class='bl-product-card__thumbnail'])[1]")
     public WebElement firstIndexSearchResult;
 
     public HomepageScreen(WebDriver driver) {
@@ -71,6 +77,8 @@ public class HomepageScreen extends ActionBase {
             waitUntilWebElementIsVisible(searchBar);
             waitAndClickElement(searchBar);
             sendKeysToWebElement(searchBar, keyword);
+            waitUntilWebElementIsVisible(searchSuggestion);
+            waitAndClickElement(submitSearchBar);
         } catch (Exception e) {
             e.getMessage();
         }

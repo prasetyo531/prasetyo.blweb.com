@@ -9,4 +9,12 @@
             <class name="scenario.RegisterInvalidOtp"/>
         </classes>
     </test>
+    <test name="second">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="phonemail" value="081284915951"></parameter>
+        <parameter name="otp" value="1234"></parameter>
+        <classes>
+            <class name="scenario.LoginInvalidOtp"/>
+        </classes>
+    </test>
 </suite>

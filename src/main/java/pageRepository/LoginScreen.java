@@ -87,6 +87,7 @@ public class LoginScreen extends ActionBase {
             waitUntilWebElementIsVisible(otpMsgLbl);
             String txt = otpMsgLbl.getText();
             Assert.assertEquals("Kode rahasia tidak sesuai", txt);
+            Thread.sleep(4000); //debug only
         } catch (Exception e) {
             e.getMessage();
         }

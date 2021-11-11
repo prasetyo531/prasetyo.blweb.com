@@ -27,7 +27,7 @@ public class RegisterScreen extends ActionBase {
     public WebElement otpField;
 
     //following
-    @FindBy(xpath ="//button[@class='bl-button bl-button--primary bl-button--medium bl-button--block'][2]")
+    @FindBy(xpath ="(//button[@class='bl-button bl-button--primary bl-button--medium bl-button--block'])[2]")
     public WebElement verifikasiBtn;
 
     @FindBy(xpath ="//p[@class='bl-text bl-text--caption bl-text--error']")
@@ -100,6 +100,7 @@ public class RegisterScreen extends ActionBase {
             waitUntilWebElementIsVisible(otpMsgLbl);
             String txt = otpMsgLbl.getText();
             Assert.assertEquals("Kode rahasia tidak sesuai", txt);
+            Thread.sleep(4000); //debug only
         } catch (Exception e) {
             e.getMessage();
         }

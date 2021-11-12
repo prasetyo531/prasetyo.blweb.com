@@ -1,9 +1,15 @@
 # prasetyo.blweb.com
 
-2 a. https://github.com/prasetyo531/prasetyo.blweb.com/blob/master/src/test/java/scenario/RegisterInvalidOtp.java
+2 a. 
 
-  b. https://github.com/prasetyo531/prasetyo.blweb.com/blob/master/src/test/java/scenario/LoginInvalidOtp.java
+register
+https://github.com/prasetyo531/prasetyo.blweb.com/blob/master/src/test/java/scenario/RegisterInvalidOtp.java
+
+login
+https://github.com/prasetyo531/prasetyo.blweb.com/blob/master/src/test/java/scenario/LoginInvalidOtp.java
   
-  c. https://github.com/prasetyo531/prasetyo.blweb.com/blob/master/src/test/java/scenario/AddToCart.java
+addToCart
+https://github.com/prasetyo531/prasetyo.blweb.com/blob/master/src/test/java/scenario/AddToCart.java
   
-  d. https://github.com/prasetyo531/prasetyo.blweb.com/blob/master/src/test/java/scenario/SearchProduct.java
+Search Product
+https://github.com/prasetyo531/prasetyo.blweb.com/blob/master/src/test/java/scenario/SearchProduct.java

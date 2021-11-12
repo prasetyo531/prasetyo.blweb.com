@@ -12,10 +12,11 @@ import java.util.concurrent.TimeUnit;
 public class HomepageScreen extends ActionBase {
 
     //descendants
-    @FindBy(xpath ="//*[@id='vm__white-header-dweb']//descendant::a[122]")
+    @FindBy(xpath =".bl-flex-container>.bl-flex-item:nth-child(2)>.bl-flex-container.align-items-center>:nth-child(1)")
     public WebElement daftarBtn;
 
-    @FindBy(xpath ="//*[@id='vm__white-header-dweb']//descendant::a[123]")
+    //@FindBy(xpath ="//*[@id='vm__white-header-dweb']//descendant::a[123]")
+    @FindBy(xpath =".bl-flex-container>.bl-flex-item:nth-child(2)>.bl-flex-container.align-items-center>:nth-child(2)")
     public WebElement loginBtn;
 
     @FindBy(id ="v-omnisearch__input")
